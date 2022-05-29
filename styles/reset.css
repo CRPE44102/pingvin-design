@@ -1,0 +1,15 @@
+* {
+    all: unset;
+    box-sizing: border-box;
+    display: revert;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+img,
+video {
+    max-width: 100%;
+}

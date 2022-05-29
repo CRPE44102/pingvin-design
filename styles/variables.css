@@ -1,0 +1,15 @@
+:root {
+    --header-font-family: rooney-web, serif;;   
+    --body-font-family: quasimoda, sans-serif;
+
+    --background-color: #fafafa;
+    --text-color: #050505;
+
+    --primary-shadow-color: #4B008233;
+    --secondary-shadow-color: #FFA500AA;
+
+    --primary-color: #4B0082;
+    --primary-color-accent: #9457EB;
+    --secondary-color: #FFA500;
+    --secondary-color-accent: #F8D568;
+}

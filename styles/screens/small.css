@@ -1,0 +1,30 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .intro-card {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .contact-info a:not(.cta-link):last-of-type {
+        margin-bottom: 0;
+    }
+
+    .profile-picture {
+        margin-right: 2.25rem;
+        margin-bottom: 0;
+    }
+
+    .skill-display-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-display:last-of-type {
+        margin-bottom: 1.5rem;
+    }
+}

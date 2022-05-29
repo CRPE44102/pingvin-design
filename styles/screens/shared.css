@@ -1,0 +1,41 @@
+/* Small screens and above */
+@media only screen and (min-width: 768px) {    
+    .intro-card-container {
+        position: sticky;
+        top: 1.5rem;
+    }
+
+    .skill-card-container {
+        display: grid;
+        gap: 2.25rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .skill-card {
+        min-width: 400px;
+        height: 100%;
+    }
+
+    .skill-card-link {
+        /* TODO: Prevent having to use important */
+        margin-bottom: 0 !important;
+    }
+}
+
+/* Medium screens and above */
+@media only screen and (min-width: 1024px) {
+    .info-wrapper {
+        display: grid;
+        gap: 2.25rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Small and Medium screens */
+@media only screen and (min-width: 768px) and (max-width: 1319px) {
+    .skill-card-container {
+        overflow: scroll;
+        margin: -0.75rem;
+        padding: 0.75rem;
+    }
+}

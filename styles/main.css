@@ -1,0 +1,236 @@
+html {
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    /* Doesn't validate, but please note the following:
+        https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display#values
+        https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display#browser_compatibility
+    */
+    font-display: block;
+}
+
+.watermark {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: -15%;
+  bottom: -15%;
+  z-index: -1;
+  opacity: 0.1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-image: url('../assets/personal/logo.png');
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    padding: 1.125rem 1.5rem;
+}
+
+section,
+footer {
+    padding-block: 1.125rem;
+}
+
+footer {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--header-font-family);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    /* Set the font weight to medium */
+    font-weight: 500;
+}
+
+a,
+p {
+    font-family: var(--body-font-family);
+}
+
+:not(.cta-button) > p {
+    line-height: 1.5rem;
+}
+
+a:not(.skill-card-link) {
+    color: var(--secondary-color);
+}
+
+a:not(.skill-card-link):hover {
+    color: var(--secondary-color-accent);
+}
+
+.intro-card-container > p {
+    margin-top: 1.5rem;
+}
+
+/* TODO: Simplify link selectors for margin */
+.contact-info {
+    margin-top: 2.25rem;
+}
+
+.contact-info a:not(.cta-link) {
+    display: block;
+    margin-block: 0.75rem;
+}
+
+.contact-info a:first-of-type {
+    margin-top: 1rem;
+}
+
+.contact-info .cta-button {
+    margin-top: 0.25rem;
+}
+
+.contact-info hr {
+    border: 1.5px solid var(--shadow-color);
+    border-radius: 5px;
+    width: 35px;
+}
+
+.cta-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--background-color);
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color-accent);
+}
+
+.cta-button img {
+    margin-right: 12px;
+    width: 20px;
+}
+
+.content-box,
+.skill-card {
+    border-radius: 5px;
+    box-shadow: 0 3px 6px var(--primary-shadow-color);
+    background-color: var(--background-color);
+    opacity: 0.9;
+}
+
+.skill-card img,
+.skill-card video {
+    border-radius: 5px 5px 0 0;
+}
+
+.content-box {
+    padding: 2.25rem;
+}
+
+.skill-card-link:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+    /* Necessary for margin to work properly */
+    display: block;
+}
+
+.skill-card-content {
+    padding: 2.25rem;
+}
+
+.skill-card-content h3 {
+    margin-bottom: 0.75rem;
+}
+
+.skill-display {
+    align-items: center;
+    display: flex;
+}
+
+.skill-display:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+}
+
+.skill-display img {
+    margin-right: 0.625rem;
+    width: 50px;
+}
+
+.profile-picture {
+    border-radius: 100%;
+    border: 3px solid var(--background-color);
+    box-shadow: 0 3px 6px var(--primary-shadow-color);
+    margin-bottom: 2.25rem;
+    width: 175px;
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 1320px;
+}
+
+
+/* These were styled later on and in class, please review */
+.skill-card-image {
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 16 / 9;
+    border-radius: 5px 5px 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card-image > p {
+    position: relative;
+    z-index: -1;
+}
+
+.video-image {
+    background-image: url('../assets/works/tinified/thumbnail.png');
+}
+
+.photography-image {
+    background-image: url('../assets/works/tinified/photography.png');
+}
+
+.poster-image {
+    background-image: url('../assets/works/tinified/poster.png');
+}
+
+.moodboard-image {
+    background-image: url('../assets/works/tinified/moodboard.png');
+}
+
+.styletile-image {
+    background-image: url('../assets/works/tinified/styletile.png');
+}
+
+.wireframe-image {
+    background-image: url('../assets/works/tinified/wireframe.png');
+}
+
+.skill-card:hover {
+    box-shadow: 0 0 10px var(--secondary-shadow-color);
+}

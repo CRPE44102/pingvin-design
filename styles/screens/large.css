@@ -1,0 +1,37 @@
+@media only screen and (min-width: 1320px) {
+    .contact-info a:not(.cta-link):last-of-type {
+        margin-bottom: 0;
+    }
+
+    .profile-picture {
+        margin-bottom: 0;
+    }
+
+    /* .info-wrapper section {
+        padding-inline: 0;
+    } */
+
+    .intro-card {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .profile-picture {
+        margin-right: 2.25rem;
+    }
+
+    .skill-display-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-display:last-of-type {
+        margin-bottom: 1.5rem;
+    }
+}
